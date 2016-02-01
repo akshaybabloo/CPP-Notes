@@ -105,7 +105,26 @@ hello")
 
 ### 2.1 Identifiers
 
-C++ follows standard [ISO Latin Alphabets](https://en.wikipedia.org/wiki/ISO_basic_Latin_alphabet), [Western arabic numbers](https://en.wikipedia.org/wiki/Arabic_numerals) and [ASCII Underscore](http://www.theasciicode.com.ar/ascii-printable-characters/underscore-understrike-underbar-low-line-ascii-code-95.html). These identifiers cannot conflict with C++ 86 keywords (which includes 11 tokens)
+C++ follows the following standards
+
+* [ISO Latin Alphabets](https://en.wikipedia.org/wiki/ISO_basic_Latin_alphabet)
+
+| A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z |
+
+* [Western arabic numbers](https://en.wikipedia.org/wiki/Arabic_numerals)
+
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+|---|---|---|---|---|---|---|---|---|---|
+
+* [ASCII Underscore](http://www.theasciicode.com.ar/ascii-printable-characters/underscore-understrike-underbar-low-line-ascii-code-95.html)
+
+```
+_
+```
+
+* These identifiers cannot conflict with C++ 86 keywords (which includes 11 tokens)
 
 |    |   |   |
 |-------------------------|------------------------|-----------------------------|
@@ -139,3 +158,5 @@ C++ follows standard [ISO Latin Alphabets](https://en.wikipedia.org/wiki/ISO_bas
 | dynamic_cast            | requires (concepts TS) |                             |
 | else                    | return                 |                             |
 | enum                    | short                  |                             |
+
+* Identifiers are case sensitive.
