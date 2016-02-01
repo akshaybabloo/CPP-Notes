@@ -120,9 +120,8 @@ C++ follows the following standards
 
 * [ASCII Underscore](http://www.theasciicode.com.ar/ascii-printable-characters/underscore-understrike-underbar-low-line-ascii-code-95.html)
 
-```
-_
-```
+| _ |
+|---|
 
 * These identifiers cannot conflict with C++ 86 keywords (which includes 11 tokens)
 
