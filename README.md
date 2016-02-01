@@ -107,7 +107,6 @@ hello")
 
 C++ follows standard [ISO Latin Alphabets](https://en.wikipedia.org/wiki/ISO_basic_Latin_alphabet), [Western arabic numbers](https://en.wikipedia.org/wiki/Arabic_numerals) and [ASCII Underscore](http://www.theasciicode.com.ar/ascii-printable-characters/underscore-understrike-underbar-low-line-ascii-code-95.html). These identifiers cannot conflict with C++ 86 keywords (which includes 11 tokens)
 
-|-------------------------|------------------------|-----------------------------|
 | alignas (since C++11)   | explicit               | signed                      |
 | alignof (since C++11)   | export(1)              | sizeof                      |
 | and                     | extern                 | static                      |
