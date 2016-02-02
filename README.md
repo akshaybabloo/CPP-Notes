@@ -217,8 +217,7 @@ printf("%d\n", d);
 
 ### 2.4 Arrays and Strings
 
-See [2_4_1_Arrays.cpp](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/2_Basics/2_4_Arrays_Strings/2_4_1_Arrays.cpp)
-See [2_4_2_String.cpp](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/2_Basics/2_4_Arrays_Strings/2_4_1_String.cpp)
+See [2_4_1_Arrays.cpp](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/2_Basics/2_4_Arrays_Strings/2_4_1_Arrays.cpp) and [2_4_2_String.cpp](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/2_Basics/2_4_Arrays_Strings/2_4_1_String.cpp)
 
 There are two types of Arrays and String in C++, one using C style Arrays & String and the second one using Standard Library (STL), which will be covered later.
 
