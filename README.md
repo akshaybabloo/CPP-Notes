@@ -171,3 +171,46 @@ Identifiers (or variables) can be initialized by using the following syntax:
 ```
 DataType VariableName = "String" or number;
 ```
+
+You can also define a read only variable or a constant in C++ by using the keyword `const`.
+
+### 2.3 Pointer and Reference
+
+[2_3_Pointers_Reference.cpp](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/2_Basics/2_3_Pointers_Reference.cpp)
+
+There are two types to call a variable; `call by value` and `call by reference`.
+
+A pointer and reference is a type of data type, which is commonly used in C/C++ programming. It is a very powerful and confusing concept. It will take time to understand.
+
+* A pointer can take reference of another variables or a real value
+
+Lets understand how identifiers work. When we say `int a = 10;`, an integer variable `a` has a value of `10` in the memory. When we say `int b = a;`, an integer variable `b` has a copy of variable `a`
+
+```cpp
+int a = 10;
+int b = a; // b = 10
+```
+
+**Pointers**
+
+So, When I say `int *c = &a`, it means that pointer `c` points to the reference of `a`.
+
+```cpp
+int a = 10;
+int *b = &a;
+printf("%d\n", *b); // this will print the reference value of a, which is 10
+```
+
+**Reference**
+
+References are the address of a value in the memory. The pointer points to this address while calling.
+
+* A reference can only call a variable which is already been initialized.
+
+So, when I say `int &d = b` the address if `b` is stored in `d`.
+
+```cpp
+int b = 20;
+int &d = b;
+printf("%d\n", d);
+```
