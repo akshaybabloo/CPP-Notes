@@ -277,7 +277,7 @@ printf("%d\n", a > b ? a : b); // if a is greater than b, print a else print b
 
 See [2_6_Switch_Case.cpp](https://github.com/akshaybabloo/CPP-Notes/blob/master/2_Basics/2_6_Switch_Case.cpp)
 
-It is type of conditional statement, which requires an expression which should satisfy a condition. An expression should always be a constant. Yyntax looks something like this
+It is type of conditional statement, which requires an expression which should satisfy a condition. If a condition is not satisfied then it jumps to `default`. An expression should always be a constant of integer or a character. Syntax looks something like this
 
 ```cpp
 switch (<#expression#>) {
