@@ -58,7 +58,7 @@ This tutorial is based on C++11. Make sure you are using the latest IDE's - XCod
 
 C++ inherits most of its code style from C language, but both are very different from each other. Lets consider an example:
 
-See [2_1_HelloWorld.cpp](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/2_Basics/2_1_HelloWorld.cpp)
+See [2_1_HelloWorld.cpp](https://github.com/akshaybabloo/CPP-Notes/blob/master/2_Basics/2_1_HelloWorld.cpp)
 
 ```cpp
 // This is a comment
@@ -164,7 +164,7 @@ C++ follows the following standards
 
 ### 2.2 Defining Variables
 
-See [2_2_DefineVariables.cpp](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/2_Basics/2_2_DefineVariables.cpp)
+See [2_2_DefineVariables.cpp](https://github.com/akshaybabloo/CPP-Notes/blob/master/2_Basics/2_2_DefineVariables.cpp)
 
 Identifiers (or variables) can be initialized by using the following syntax:
 
@@ -176,7 +176,7 @@ You can also define a read only variable or a constant in C++ by using the keywo
 
 ### 2.3 Pointer and Reference
 
-see [2_3_Pointers_Reference.cpp](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/2_Basics/2_3_Pointers_Reference.cpp)
+see [2_3_Pointers_Reference.cpp](https://github.com/akshaybabloo/CPP-Notes/blob/master/2_Basics/2_3_Pointers_Reference.cpp)
 
 There are two types to call a variable; `call by value` and `call by reference`.
 
@@ -217,7 +217,7 @@ printf("%d\n", d);
 
 ### 2.4 Arrays and Strings
 
-See [2_4_1_Arrays.cpp](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/2_Basics/2_4_Arrays_Strings/2_4_1_Arrays.cpp) and [2_4_2_String.cpp](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/2_Basics/2_4_Arrays_Strings/2_4_1_String.cpp)
+See [2_4_1_Arrays.cpp](https://github.com/akshaybabloo/CPP-Notes/blob/master/2_Basics/2_4_Arrays_Strings/2_4_1_Arrays.cpp) and [2_4_2_String.cpp](https://github.com/akshaybabloo/CPP-Notes/blob/master/2_Basics/2_4_Arrays_Strings/2_4_2_String.cpp)
 
 There are two types of Arrays and String in C++, one using C style Arrays & String and the second one using Standard Library (STL), which will be covered later.
 
