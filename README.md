@@ -58,6 +58,8 @@ This tutorial is based on C++11. Make sure you are using the latest IDE's - XCod
 
 C++ inherits most of its code style from C language, but both are very different from each other. Lets consider an example:
 
+See [2_1_HelloWorld.cpp](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/2_Basics/2_1_HelloWorld.cpp)
+
 ```cpp
 // This is a comment
 
@@ -159,3 +161,13 @@ C++ follows the following standards
 | enum                    | short                  |                             |
 
 * Identifiers are case sensitive.
+
+### 2.2 Defining Variables
+
+See [2_2_DefineVariables.cpp](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/2_Basics/2_2_DefineVariables.cpp)
+
+Identifiers (or variables) can be initialized by using the following syntax:
+
+```
+DataType VariableName = "String" or number;
+```
