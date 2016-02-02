@@ -214,3 +214,27 @@ int b = 20;
 int &d = b;
 printf("%d\n", d);
 ```
+
+### 2.4 Arrays and Strings
+
+See [2_4_1_Arrays.cpp](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/2_Basics/2_4_Arrays_Strings/2_4_1_Arrays.cpp)
+See [2_4_2_String.cpp](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/2_Basics/2_4_Arrays_Strings/2_4_1_String.cpp)
+
+There are two types of Arrays and String in C++, one using C style Arrays & String and the second one using Standard Library (STL), which will be covered later.
+
+**Arrays**
+
+The syntax of a C-based array is
+
+```cpp
+int a[5] = {1,2,3,4,5}; // array[SizeOfArray] = {'contents'};
+printf("%d\n", a[0]); // 1
+```
+**Strings**
+
+A strings is an array of characters terminated string or also called as null terminated string.
+
+```cpp
+char a[6] = {'a', 'b', 'c', 'd', 'e', 0};
+printf("%s\n", a);
+```
