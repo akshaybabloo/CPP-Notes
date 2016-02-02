@@ -176,7 +176,7 @@ You can also define a read only variable or a constant in C++ by using the keywo
 
 ### 2.3 Pointer and Reference
 
-[2_3_Pointers_Reference.cpp](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/2_Basics/2_3_Pointers_Reference.cpp)
+see [2_3_Pointers_Reference.cpp](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/2_Basics/2_3_Pointers_Reference.cpp)
 
 There are two types to call a variable; `call by value` and `call by reference`.
 
