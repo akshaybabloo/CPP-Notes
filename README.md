@@ -52,11 +52,11 @@ This tutorial is based on C++11. Make sure you are using the latest IDE's - XCod
 **Running the CPP files**
 
 1. Open your command prompt, by doing `WINDOWS + R` and type in `cmd`.
-2. To run the built `test.cpp`, you would have to go to the project folder `CPP > Build > CPP.exe`. Drag and drop `CPP.exe` on the command prompt the press `Enter`, this will output `hello`.
+2. To execute the built `test.cpp`, You would have to go to the project folder `CPP > Build > CPP.exe`. Drag and drop `CPP.exe` on the command prompt the press `Enter`, this will output `hello`.
 
 ## 2 Basics
 
-C++ inherits most of its code style from C language, but both are very different from each other. Lets consider an example:
+C++ inherits most of its code style from C language, but both are very different from each other. Let's consider an example:
 
 See [2_1_HelloWorld.cpp](https://github.com/akshaybabloo/CPP-Notes/blob/master/2_Basics/2_1_HelloWorld.cpp)
 
@@ -79,7 +79,7 @@ int main(int argc, char ** argv) {
 }
 ```
 
-A C++ program can also be written like this (thought I wouldn't recommend it):
+A C++ program can also be written like this (though I wouldn't recommend it):
 
 ```cpp
 #include <cstdio>
@@ -103,7 +103,7 @@ hello")
 **Things to remember**
 
 1. A statement should always end with `;`.
-2. `#Include` should always be in single line with out any space followed by `<>` or `""`.
+2. `#Include` should always be in single line without any space followed by `<>` or `""`.
 
 ### 2.1 Identifiers
 
@@ -172,15 +172,15 @@ Identifiers (or variables) can be initialized by using the following syntax:
 DataType VariableName = "String" or number;
 ```
 
-You can also define a read only variable or a constant in C++ by using the keyword `const`.
+You can also define a read-only variable or a constant in C++ by using the keyword `const`.
 
 ### 2.3 Pointer and Reference
 
 see [2_3_Pointers_Reference.cpp](https://github.com/akshaybabloo/CPP-Notes/blob/master/2_Basics/2_3_Pointers_Reference.cpp)
 
-There are two types to call a variable; `call by value` and `call by reference`.
+A variable can be called in two ways; `call by value` and `call by reference`.
 
-A pointer and reference is a type of data type, which is commonly used in C/C++ programming. It is a very powerful and confusing concept. It will take time to understand.
+A pointer and reference are a type of data type, which is commonly used in C/C++ programming. It is a very powerful and confusing concept. It will take some time to understand.
 
 * A pointer can take reference of another variables or a real value
 
@@ -205,7 +205,7 @@ printf("%d\n", *b); // this will print the reference value of a, which is 10
 
 References are the address of a value in the memory. The pointer points to this address while calling.
 
-* A reference can only call a variable which is already been initialized.
+* A reference can only call a variable which is already initialized.
 
 So, when I say `int &d = b` the address if `b` is stored in `d`.
 
@@ -231,7 +231,7 @@ printf("%d\n", a[0]); // 1
 ```
 **Strings**
 
-A strings is an array of characters terminated string or also called as null terminated string.
+A string is an array of characters terminated string or also called as null terminated string.
 
 ```cpp
 char a[6] = {'a', 'b', 'c', 'd', 'e', 0};
