@@ -237,3 +237,38 @@ A string is an array of characters terminated string or also called as null term
 char a[6] = {'a', 'b', 'c', 'd', 'e', 0};
 printf("%s\n", a); // abcde
 ```
+
+### 2.5 Conditions
+
+See [2_5_Conditions.cpp](https://github.com/akshaybabloo/CPP-Notes/blob/master/2_Basics/2_5_Conditions.cpp)
+
+There are two ways to use conditional operators.
+
+1. Traditional conditional operator.
+2. Ternary conditional operator.
+
+**Traditional conditional operator**
+
+`if..else..` are common type of conditional statements.
+
+```cpp
+int a = 10;
+int b = 20;
+
+if (a > b) {
+  puts("a>b");
+} else {
+  puts("b>a");
+}
+```
+
+**Ternary conditional operator**
+
+Its a one liner conditional operator
+
+```cpp
+int a = 10;
+int b = 20;
+
+printf("%d\n", a > b ? a : b); // if a is greater than b, print a else print b
+```
