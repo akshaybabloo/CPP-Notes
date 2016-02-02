@@ -236,5 +236,5 @@ A strings is an array of characters terminated string or also called as null ter
 
 ```cpp
 char a[6] = {'a', 'b', 'c', 'd', 'e', 0};
-printf("%s\n", a);
+printf("%s\n", a); // abcde
 ```
