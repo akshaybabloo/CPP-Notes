@@ -26,11 +26,19 @@ C++ Notes
 
 This tutorial is based on C++11. Make sure you are using the latest IDE's - XCode (Mac) or Visual Studio (Windows). You can use other IDE's but make sure it supports the latest C++ version.
 
+IDE's that I think are good:
+
+1. [Visual Studio 2015 Community](https://www.visualstudio.com/) - Windows
+2. [XCode](https://developer.apple.com/xcode/) - Mac
+3. [CLion](https://www.jetbrains.com/clion) - Cross-platform
+4. [NetBeans](https://netbeans.org/downloads/index.html) - Cross-platform
+5. [Eclipse](https://eclipse.org/downloads/) - Cross-platform
+
 ### 1.1 Mac
 
 **Adding files to Xcode**
 
-1. Download Xcode from the App Store.
+1. Download `XCode` from the App Store.
 2. Open Xcode application and click on `File > New > Workspace...`.
 3. Name the `Workspace` as `CPP-Notes`.
 4. Click on the `+` sign and then click on `Add Files to "CPP-Notes"...`
