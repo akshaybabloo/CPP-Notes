@@ -52,4 +52,6 @@ xcuserdata/
 *.xcworkspace
 *.xcodeproj
 
-CPP-Notes/*
+CPP-Notes/CPP-Notes/*
+
+CPP-Notes/CPP-Notes/main.cpp

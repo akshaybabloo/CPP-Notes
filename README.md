@@ -20,6 +20,7 @@ C++ Notes
 	- [2.9 Range base For loop](#29-range-base-for-loop)
 	- [2.10 Using stdout](#210-using-stdout)
 - [3 Functions](#3-functions)
+	- [3.1 Defining a function](#31-defining-a-function)
 
 <!-- /TOC -->
 
@@ -382,7 +383,7 @@ Creating a compiled version of `cout` uses a lot of resources when compared to `
 
 ## 3 Functions
 
-A function can be defined as a block of code that is separate from the existing code, that is all the variables used in a function would only belong to that particular function. For example:
+A function can be defined as a block of code that is separate from the existing code, that is all the variables used in a function would only belong to that particular function. For example (sudo code):
 
 ```cpp
 int a = 10;
@@ -399,7 +400,7 @@ printf("%d\n", c);
 
 From the above the the variables `a` and `b` in function `sum()` are different from the initialized variable `a` and `b`.
 
-This particular type of function is call `call by value` function. Another type of function is called as the `call by reference` or sometimes called as the `call by address`. For example:
+This particular type of function is call `call by value` function. Another type of function is called as the `call by reference` or sometimes called as the `call by address`. For example (sudo code):
 
 ```cpp
 int a = 10;
@@ -412,4 +413,72 @@ int sum (int *a, int *b){
 }
 
 printf("%d\n", c);
+```
+
+### 3.1 Defining a function
+
+See [3_1_1_Define_Function](3_1_1_Define_Function.cpp)
+
+In C++, a function should be declared first before calling it. That is:
+
+```cpp
+void name(/* arguments */) {
+  /* code */
+}
+
+int main(int argc, char const *argv[]) {
+  name()
+  return 0;
+}
+```
+
+C++ will not compile if the function being called is written after the main function.
+
+See [3_1_2_Forward_Declaration](3_1_2_Forward_Declaration.cpp)
+
+To overcome with this problem, we have something called `Forward Declaration`. For example:
+
+```cpp
+void name(/* arguments */);
+
+int main(int argc, char const *argv[]) {
+  name()
+  return 0;
+}
+
+void name(/* arguments */) {
+  /* code */
+}
+```
+
+`void name(/* arguments */);` is know as `Forward Declaration` or prototype of `name()`
+
+See [3_1_3_Function_Header.cpp](3_1_3_Function_Header.cpp) and [3_1_3_Function_Header.h](3_1_3_Function_Header.cpp)
+
+The common way to do `Forward Declaration` is to put the prototype in an header file. For example:
+
+`3_1_3_Function_Header.cpp`
+
+```cpp
+#include "3_1_3_Function_Header.h"
+
+int main(int argc, char const *argv[]) {
+  name()
+  return 0;
+}
+
+void name(/* arguments */) {
+  /* code */
+}
+```
+
+`3_1_3_Function_Header.h`
+
+```cpp
+#ifndef 3_1_3_Function_Header_h
+#define 3_1_3_Function_Header_h
+
+void name(/* arguments */);
+
+#endif
 ```
