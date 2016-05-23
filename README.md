@@ -316,7 +316,7 @@ There are two types of `While` loop in C++
 
 ### 2.8 For Loop
 
-[2_8_For_Loop.cpp](https://github.com/akshaybabloo/CPP-Notes/blob/master/2_Basics/2_8_For_Loop.cpp)
+See [2_8_For_Loop.cpp](https://github.com/akshaybabloo/CPP-Notes/blob/master/2_Basics/2_8_For_Loop.cpp)
 
 For loop is like `while` loop but with some extra features
 
@@ -337,3 +337,15 @@ for (type var1 : var2) {
   /* code */
 }
 ```
+
+### 2.10 Using stdout
+
+C++ also has a way to used object oriented way of printing out contents to the terminal/command prompt. So far we have used `printf` and `puts`.
+
+```cpp
+std::cout << "Hello World!" << std::endl;
+```
+
+The above code shows a bitwise stream of string to `cout`. The `<<` shows left shift of the content.
+
+Creating a compiled version of `cout` uses a lot of resources when compared to `puts` or `printf`, this is because to compile `cout` the whole standard library - `STL` - is copied.
