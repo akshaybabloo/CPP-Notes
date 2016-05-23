@@ -10,30 +10,13 @@
 
 int main(int argc, char ** argv) {
 	
-	const int one = 1;
-	const int two = 2;
-	const int three = 3;
-	const int four = 4;
-	
-	int exp = 2; // this is the condition, if this is anything other than 1,2,3 or 4 it jumps to default.
-	
-	switch (exp) { // its 2
-		case one:
-			puts("one");
-			break;
-		case two: // the expression satisfies this condition, so it jumps here
-			puts("two");
-			break;
-		case three:
-			puts("three");
-			break;
-		case four:
-			puts("four");
-			break;
-		default:
-			puts("default");
-			break;
-	}
+    int a[] = {1,2,3,4};
+    int b = 0;
+    
+    while (b<5) {
+        printf("Index number %d is %d\n", b, a[b]);
+        b++;
+    }
 	
 	return 0;
 }

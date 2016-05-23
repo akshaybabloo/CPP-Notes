@@ -237,7 +237,7 @@ printf("%d\n", a[0]); // 1
 ```
 **Strings**
 
-A string is an array of characters terminated string or also called as null terminated string.
+A string is an array of characters terminated string or also called as null terminated string. A string is always terminated with 0.
 
 ```cpp
 char a[6] = {'a', 'b', 'c', 'd', 'e', 0};
@@ -286,12 +286,54 @@ See [2_6_Switch_Case.cpp](https://github.com/akshaybabloo/CPP-Notes/blob/master/
 It is type of conditional statement, which requires an expression which should satisfy a condition. If a condition is not satisfied then it jumps to `default`. An expression should always be a constant of integer or a character. Syntax looks something like this
 
 ```cpp
-switch (<#expression#>) {
-  case <#constant#>:
-			<#statements#>
-			break;
+switch (/* expression */) {
+  case /* value */:
+    /* statement */
+}
+```
 
-  default:
-			break;
-	}
+### 2.7 While Loop
+
+See [2_7_While_Loop.cpp](https://github.com/akshaybabloo/CPP-Notes/blob/master/2_Basics/2_7_While_Loop.cpp)
+
+There are two types of `While` loop in C++
+
+1. `While` loop
+
+  ```cpp
+  while (/* condition */) {
+    /* code */
+  }
+  ```
+
+2. `do.. While..` loop
+
+  ```cpp
+  do {
+    /* code */
+  } while(/* condition */);
+  ```
+
+### 2.8 For Loop
+
+[2_8_For_Loop.cpp](https://github.com/akshaybabloo/CPP-Notes/blob/master/2_Basics/2_8_For_Loop.cpp)
+
+For loop is like `while` loop but with some extra features
+
+```cpp
+for (size_t i = 0; i < count; i++) {
+  /* code */
+}
+```
+
+### 2.9 Range base For loop
+
+See [2_9_Range_For.cpp](https://github.com/akshaybabloo/CPP-Notes/blob/master/2_Basics/2_9_Range_For.cpp)
+
+Starting from C++11 we can use range based `For` loop
+
+```cpp
+for (type var1 : var2) {
+  /* code */
+}
 ```
