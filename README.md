@@ -1,6 +1,25 @@
 # CPP-Notes
 C++ Notes
 
+<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [1 Requirements](#1-requirements)
+	- [1.1 Mac](#11-mac)
+	- [1.2 Windows](#12-windows)
+- [2 Basics](#2-basics)
+	- [2.1 Identifiers](#21-identifiers)
+	- [2.2 Defining Variables](#22-defining-variables)
+	- [2.3 Pointer and Reference](#23-pointer-and-reference)
+	- [2.4 Arrays and Strings](#24-arrays-and-strings)
+	- [2.5 Conditions](#25-conditions)
+	- [2.6 Switch Case](#26-switch-case)
+	- [2.7 While Loop](#27-while-loop)
+	- [2.8 For Loop](#28-for-loop)
+	- [2.9 Range base For loop](#29-range-base-for-loop)
+	- [2.10 Using stdout](#210-using-stdout)
+
+<!-- /TOC -->
+
 ## 1 Requirements
 
 This tutorial is based on C++11. Make sure you are using the latest IDE's - XCode (Mac) or Visual Studio (Windows). You can use other IDE's but make sure it supports the latest C++ version.
