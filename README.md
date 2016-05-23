@@ -26,7 +26,7 @@ This tutorial is based on C++11. Make sure you are using the latest IDE's - XCod
 ### 1.2 Windows
 
 1. Go to [https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx](https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx) and download `Visual Studio Community` version. Make sure `Visual C++` package is selected and continue the installation.
-2. Once installed, Click on `File > New > Project` or use the shortcut `Ctrl + Shift + N`.
+2. Once installed, Click on `File > New > Project` or use the shortcut <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd>.
   ![Visual Studio New Project](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/Screenshots/vs-new-project.png)
 3. We are adding the preprocessing variable because of the way Microsoft has written its c++ compiler.  For that to happen, we are creating a C++ file. Under `Solution Explorer` right click on `Source Files > Add > New Item...` name it as `test.cpp` and type int he following:
   ```cpp
@@ -51,7 +51,7 @@ This tutorial is based on C++11. Make sure you are using the latest IDE's - XCod
 
 **Running the CPP files**
 
-1. Open your command prompt, by doing `WINDOWS + R` and type in `cmd`.
+1. Open your command prompt, by doing <kbd>WINDOWS</kbd> + <kbd>R</kbd> and type in `cmd`.
 2. To execute the built `test.cpp`, You would have to go to the project folder `CPP > Build > CPP.exe`. Drag and drop `CPP.exe` on the command prompt the press `Enter`, this will output `hello`.
 
 ## 2 Basics
