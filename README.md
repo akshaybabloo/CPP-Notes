@@ -19,6 +19,7 @@ C++ Notes
 	- [2.8 For Loop](#28-for-loop)
 	- [2.9 Range base For loop](#29-range-base-for-loop)
 	- [2.10 Using stdout](#210-using-stdout)
+- [3 Functions](#3-functions)
 
 <!-- /TOC -->
 
@@ -378,3 +379,37 @@ std::cout << "Hello World!" << std::endl;
 The above code shows a bitwise stream of string to `cout`. The `<<` shows left shift of the content.
 
 Creating a compiled version of `cout` uses a lot of resources when compared to `puts` or `printf`, this is because to compile `cout` the whole standard library - `STL` - is copied.
+
+## 3 Functions
+
+A function can be defined as a block of code that is separate from the existing code, that is all the variables used in a function would only belong to that particular function. For example:
+
+```cpp
+int a = 10;
+int b = 20;
+
+c = sum(a, b);
+
+int sum (int a, int b){
+  return a + b;
+}
+
+printf("%d\n", c);
+```
+
+From the above the the variables `a` and `b` in function `sum()` are different from the initialized variable `a` and `b`.
+
+This particular type of function is call `call by value` function. Another type of function is called as the `call by reference` or sometimes called as the `call by address`. For example:
+
+```cpp
+int a = 10;
+int b = 20;
+
+c = sum(&a, &b);
+
+int sum (int *a, int *b){
+  return *a + *b;
+}
+
+printf("%d\n", c);
+```
