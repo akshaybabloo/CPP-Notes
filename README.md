@@ -27,8 +27,11 @@ This tutorial is based on C++11. Make sure you are using the latest IDE's - XCod
 
 1. Go to [https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx](https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx) and download `Visual Studio Community` version. Make sure `Visual C++` package is selected and continue the installation.
 2. Once installed, Click on `File > New > Project` or use the shortcut <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd>.
+
   ![Visual Studio New Project](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/Screenshots/vs-new-project.png)
+
 3. We are adding the preprocessing variable because of the way Microsoft has written its c++ compiler.  For that to happen, we are creating a C++ file. Under `Solution Explorer` right click on `Source Files > Add > New Item...` name it as `test.cpp` and type int he following:
+
   ```cpp
   #include <cstdio>
 
@@ -39,14 +42,17 @@ This tutorial is based on C++11. Make sure you are using the latest IDE's - XCod
       return 0;
   }  
   ```
+
   From the menubar click on `Build > Build Solution`
 4. Under Solution Explorer, right click on `CPP > Properties`
   ![Visual Studio Project Property](https://raw.githubusercontent.com/akshaybabloo/CPP-Notes/master/Screenshots/vs-project-property.png)
   As shown in the image above click on `<Edit...>`. In the text box type in the following:
+
   ```
   _CRT_SECURE_NO_WARNINGS
   _HAS_ITERATOR_DEBUGGING=0
   ```
+
   Click on `OK`
 
 **Running the CPP files**
