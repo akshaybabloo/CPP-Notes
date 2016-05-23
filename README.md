@@ -417,7 +417,7 @@ printf("%d\n", c);
 
 ### 3.1 Defining a function
 
-See [3_1_1_Define_Function](3_1_1_Define_Function.cpp)
+See [3_1_1_Define_Function](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_1_Define_Function/3_1_1_Define_Function.cpp)
 
 In C++, a function should be declared first before calling it. That is:
 
@@ -434,7 +434,7 @@ int main(int argc, char const *argv[]) {
 
 C++ will not compile if the function being called is written after the main function.
 
-See [3_1_2_Forward_Declaration](3_1_2_Forward_Declaration.cpp)
+See [3_1_2_Forward_Declaration](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_1_Define_Function/3_1_2_Forward_Declaration.cpp)
 
 To overcome with this problem, we have something called `Forward Declaration`. For example:
 
@@ -453,7 +453,7 @@ void name(/* arguments */) {
 
 `void name(/* arguments */);` is know as `Forward Declaration` or prototype of `name()`
 
-See [3_1_3_Function_Header.cpp](3_1_3_Function_Header.cpp) and [3_1_3_Function_Header.h](3_1_3_Function_Header.cpp)
+See [3_1_3_Function_Header.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_1_Define_Function/3_1_3_Function_Header.cpp) and [3_1_3_Function_Header.h](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_1_Define_Function/3_1_3_Function_Header.cpp)
 
 The common way to do `Forward Declaration` is to put the prototype in an header file. For example:
 
