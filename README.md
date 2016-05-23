@@ -17,10 +17,11 @@ C++ Notes
 	- [2.6 Switch Case](#26-switch-case)
 	- [2.7 While Loop](#27-while-loop)
 	- [2.8 For Loop](#28-for-loop)
-	- [2.9 Range base For loop](#29-range-base-for-loop)
+	- [2.9 Range base `For` loop](#29-range-base-for-loop)
 	- [2.10 Using stdout](#210-using-stdout)
 - [3 Functions](#3-functions)
 	- [3.1 Defining a function](#31-defining-a-function)
+	- [3.2 Passing values to a function](#32-passing-values-to-a-function)
 
 <!-- /TOC -->
 
@@ -219,7 +220,7 @@ A variable can be called in two ways; `call by value` and `call by reference`.
 
 A pointer and reference are a type of data type, which is commonly used in C/C++ programming. It is a very powerful and confusing concept. It will take some time to understand.
 
-* A pointer can take reference of another variables or a real value
+* A pointer can take reference of another variable or a real value
 
 Lets understand how identifiers work. When we say `int a = 10;`, an integer variable `a` has a value of `10` in the memory. When we say `int b = a;`, an integer variable `b` has a copy of variable `a`
 
@@ -240,7 +241,7 @@ printf("%d\n", *b); // this will print the reference value of a, which is 10
 
 **Reference**
 
-References are the address of a value in the memory. The pointer points to this address while calling.
+References are the address of value in the memory. The pointer points to this address while calling.
 
 * A reference can only call a variable which is already initialized.
 
@@ -286,7 +287,7 @@ There are two ways to use conditional operators.
 
 **Traditional conditional operator**
 
-`if..else..` are common type of conditional statements.
+`if..else..` are the common type of conditional statements.
 
 ```cpp
 int a = 10;
@@ -314,7 +315,7 @@ printf("%d\n", a > b ? a : b); // if a is greater than b, print a else print b
 
 See [2_6_Switch_Case.cpp](https://github.com/akshaybabloo/CPP-Notes/blob/master/2_Basics/2_6_Switch_Case.cpp)
 
-It is type of conditional statement, which requires an expression which should satisfy a condition. If a condition is not satisfied then it jumps to `default`. An expression should always be a constant of integer or a character. Syntax looks something like this
+It is a conditional statement, which requires an expression which should satisfy a condition. If a condition is not satisfied, then it jumps to `default`. An expression should always be a constant of integer or a character. Syntax looks something like this
 
 ```cpp
 switch (/* expression */) {
@@ -357,11 +358,11 @@ for (size_t i = 0; i < count; i++) {
 }
 ```
 
-### 2.9 Range base For loop
+### 2.9 Range base `For` loop
 
 See [2_9_Range_For.cpp](https://github.com/akshaybabloo/CPP-Notes/blob/master/2_Basics/2_9_Range_For.cpp)
 
-Starting from C++11 we can use range based `For` loop
+Starting from C++11, we can use range based `For` loop
 
 ```cpp
 for (type var1 : var2) {
@@ -383,7 +384,7 @@ Creating a compiled version of `cout` uses a lot of resources when compared to `
 
 ## 3 Functions
 
-A function can be defined as a block of code that is separate from the existing code, that is all the variables used in a function would only belong to that particular function. For example (sudo code):
+A function can be defined as a block of code that is separate from the existing code; that is all the variables used in a function would only belong to that particular function. For example (pseudo code):
 
 ```cpp
 int a = 10;
@@ -398,9 +399,9 @@ int sum (int a, int b){
 printf("%d\n", c);
 ```
 
-From the above the the variables `a` and `b` in function `sum()` are different from the initialized variable `a` and `b`.
+From the above the variables `a` and `b` in function `sum()` are different from the initialized variable `a` and `b`.
 
-This particular type of function is call `call by value` function. Another type of function is called as the `call by reference` or sometimes called as the `call by address`. For example (sudo code):
+This particular type of function is call `call by value` function. Another type of function is called as the `call by reference` or sometimes called as the `call by address`. For example (pseudo code):
 
 ```cpp
 int a = 10;
@@ -436,7 +437,7 @@ C++ will not compile if the function being called is written after the main func
 
 See [3_1_2_Forward_Declaration](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_1_Define_Function/3_1_2_Forward_Declaration.cpp)
 
-To overcome with this problem, we have something called `Forward Declaration`. For example:
+To overcome this problem, we have something called `Forward Declaration`. For example:
 
 ```cpp
 void name(/* arguments */);
@@ -455,7 +456,7 @@ void name(/* arguments */) {
 
 See [3_1_3_Function_Header.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_1_Define_Function/3_1_3_Function_Header.cpp) and [3_1_3_Function_Header.h](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_1_Define_Function/3_1_3_Function_Header.cpp)
 
-The common way to do `Forward Declaration` is to put the prototype in an header file. For example:
+The common way to do `Forward Declaration` is to put the prototype in a header file. For example:
 
 `3_1_3_Function_Header.cpp`
 
@@ -482,3 +483,5 @@ void name(/* arguments */);
 
 #endif
 ```
+
+### 3.2 Passing values to a function
