@@ -621,3 +621,21 @@ int main(int argc, char const *argv[]) {
     return 0;
 }
 ```
+
+## 3.5 Function pointer
+
+See [3_5_Function_Pointer.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_5_Function_Pointer.cpp)
+
+You can call a function by pointing to it, the same way you point to a variable. The only difference is that the data type of the function should match with the data type of the function pointer. For example
+
+```cpp
+	void name( {
+		puts("hello");
+	}
+
+int main(int argc, char const *argv[]) {
+	void (*function_pointer)() = name;
+	function_pointer();
+	return 0;
+}
+```
