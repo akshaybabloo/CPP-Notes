@@ -583,19 +583,19 @@ void sum(const int *a, const int *b){
 
 See [3_3_1_Auto_Variable.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_3_Auto_Static_Variables/3_3_1_Auto_Variable.cpp)
 
-By default C++ uses automatic variables in every function. Whenever the function is called the variable local to it is initialized on a stack. For example
+By default, C++ uses automatic variables in every function. Whenever the function is called the variable local to it is initialized on a stack. For example
 
 ```cpp
 void name() {
-	int a = 10;
-	printf("%d\n", a);
-	a = 30;
+    int a = 10;
+    printf("%d\n", a);
+    a = 30;
 }
 
 int main(int argc, char const *argv[]) {
-	name();
-	name();// this will always print the same thing
-	return 0;
+    name();
+    name();// this will always print the same thing
+    return 0;
 }
 ```
 
@@ -609,15 +609,15 @@ Unlike automatic variables Static variables do not get created on every function
 
 See [3_4_Return_Function.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_4_Return_Function.cpp)
 
-To return a function we would have to type in the return type and use the keyword `return` in the end of the function. For example:
+To return a function, we would have to type in the return type and use the keyword `return` at the end of the function. For example:
 
 ```cpp
 int number(){
-	return 10;
+    return 10;
 }
 
 int main(int argc, char const *argv[]) {
-	printf("%d\n", number());
-	return 0;
+    printf("%d\n", number());
+    return 0;
 }
 ```
