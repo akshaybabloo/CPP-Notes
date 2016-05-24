@@ -485,3 +485,94 @@ void name(/* arguments */);
 ```
 
 ### 3.2 Passing values to a function
+
+There are two two ways to pass values to a function
+
+1. Pass by Value
+2. Pass by Reference
+
+**Pass by value:**
+
+See [3_2_1_Pass_by_Value.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_2_Passing_Values/3_2_1_Pass_by_Value.cpp)
+
+When you pass a value to a function, a copy of that value is stored in the argument.
+
+```cpp
+void name(int c, int d) {
+    printf("%d\n", c + d);
+}
+
+int main(int argc, char const *argv[]) {
+    int a = 10;
+    int b = 20;
+
+    sum(a,b);
+    return 0;
+}
+```
+
+**Pass by Reference**
+
+See [3_2_2_Pass_by_Reference.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_2_Passing_Values/3_2_2_Pass_by_Reference.cpp)
+
+We will talk more about pointers in the coming chapters. In C/C++ (but not limited to theses languages), when you create a variable a memory is allocated to that variable, this memory space has an address (location of it), so the reference here means we are sending the address of the variable rather than the variable itself.
+
+For example, let us consider `int a = 10;`, which means an integer variable `a` has a value of `10` if you convert this in a diagrammatically you will get the following:
+
+```
+int a = 10;
+----------
+| a | 10 |  --> 123456
+----------
+```
+
+The number `123456` is the address/location of integer `a` in the memory. When passing the value by reference you send this address, that means you do not create extra space for data; you just use what you have.
+
+```cpp
+void sum(int *a, int *b){
+    printf("%d\n", *a+*b); // *a and *b pointing to the address given to them.
+}
+
+int main(int argc, char ** argv) {
+    int a = 10;
+    int b = 20;
+    sum(&a,&b); // address of a and b
+    return 0;
+}
+```
+
+See [3_2_3_Pass_by_Reference_Const.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_2_Passing_Values/3_2_3_Pass_by_Reference_Const.cpp)
+
+There is one problem with pointers in C/C++, that is if you change the contents of the address in `sum()` function you will change the value of the variable. For example If we add a new integer `a=30` or `*a=30` variable to `sum()`
+
+```cpp
+void sum(int &a, int &b){
+    a = 30;
+    printf("%d\n", a+b);
+}
+
+// or
+
+void sum(int *a, int *b){
+    *a = 30;
+    printf("%d\n", *a+*b);
+}
+
+```
+
+The value of `a` is completely changed, for this not to happen we will have to use a keyword called `const`.
+
+```cpp
+void sum(const int &a, const int &b){
+    a = 30;
+    printf("%d\n", a+b);
+}
+
+// or
+
+void sum(const int *a, const int *b){
+    *a = 30;
+    printf("%d\n", *a+*b);
+}
+
+```
