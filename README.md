@@ -576,3 +576,31 @@ void sum(const int *a, const int *b){
 }
 
 ```
+
+### 3.3 Automatic variables vs. Static variables
+
+**Automatic variable**
+
+See [3_3_1_Auto_Variable.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_3_Auto_Static_Variables/3_3_1_Auto_Variable.cpp)
+
+By default C++ uses automatic variables in every function. Whenever the function is called the variable local to it is initialized on a stack. For example
+
+```cpp
+void name() {
+	int a = 10;
+	printf("%d\n", a);
+	a = 30;
+}
+
+int main(int argc, char const *argv[]) {
+	name();
+	name();// this will always print the same thing
+	return 0;
+}
+```
+
+**Static variable**
+
+See [3_3_2_Static_Variable.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_3_Auto_Static_Variables/3_3_2_Static_Variable.cpp)
+
+Unlike automatic variables Static variables do not get created on every function call, they just use whatever was previously defined. Don't forget to use `const` if you don't want to change the value.
