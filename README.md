@@ -604,3 +604,20 @@ int main(int argc, char const *argv[]) {
 See [3_3_2_Static_Variable.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_3_Auto_Static_Variables/3_3_2_Static_Variable.cpp)
 
 Unlike automatic variables Static variables do not get created on every function call, they just use whatever was previously defined. Don't forget to use `const` if you don't want to change the value.
+
+### 3.4 Return a function call
+
+See [3_4_Return_Function.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_4_Return_Function.cpp)
+
+To return a function we would have to type in the return type and use the keyword `return` in the end of the function. For example:
+
+```cpp
+int number(){
+	return 10;
+}
+
+int main(int argc, char const *argv[]) {
+	printf("%d\n", number());
+	return 0;
+}
+```
