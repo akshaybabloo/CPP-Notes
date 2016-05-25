@@ -22,6 +22,10 @@ C++ Notes
 - [3 Functions](#3-functions)
 	- [3.1 Defining a function](#31-defining-a-function)
 	- [3.2 Passing values to a function](#32-passing-values-to-a-function)
+	- [3.3 Automatic variables vs. Static variables](#33-automatic-variables-vs-static-variables)
+	- [3.4 Return a function call](#34-return-a-function-call)
+	- [3.5 Function pointer](#35-function-pointer)
+	- [3.6 Overloading function names](#36-overloading-function-names)
 
 <!-- /TOC -->
 
@@ -511,7 +515,7 @@ int main(int argc, char const *argv[]) {
 }
 ```
 
-**Pass by Reference**
+**Pass by Reference:**
 
 See [3_2_2_Pass_by_Reference.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_2_Passing_Values/3_2_2_Pass_by_Reference.cpp)
 
@@ -622,7 +626,7 @@ int main(int argc, char const *argv[]) {
 }
 ```
 
-## 3.5 Function pointer
+### 3.5 Function pointer
 
 See [3_5_Function_Pointer.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_5_Function_Pointer.cpp)
 
@@ -639,3 +643,9 @@ int main(int argc, char const *argv[]) {
 	return 0;
 }
 ```
+
+### 3.6 Overloading function names
+
+See [3_6_Overloading_Fucntion_Names.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_6_Overloading_Fucntion_Names.cpp)
+
+In C++ you can have multiple functions with the same name, but the signature (data type) should be same all over the function.
