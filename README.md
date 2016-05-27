@@ -665,23 +665,6 @@ In C++ you can change the definition of the following 38 operators:
 </style>
 <table class="tg">
   <tr>
-    <th class="tg-031e"></th>
-    <th class="tg-031e"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-  </tr>
-  <tr>
     <td class="tg-yw4l">+</td>
     <td class="tg-yw4l">-</td>
     <td class="tg-yw4l">*</td>
