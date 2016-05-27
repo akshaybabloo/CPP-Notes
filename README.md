@@ -26,6 +26,7 @@ C++ Notes
 	- [3.4 Return a function call](#34-return-a-function-call)
 	- [3.5 Function pointer](#35-function-pointer)
 	- [3.6 Overloading function names](#36-overloading-function-names)
+	- [3.7 Overloading operators with function](#37-overloading-operators-with-function)
 
 <!-- /TOC -->
 
@@ -649,3 +650,17 @@ int main(int argc, char const *argv[]) {
 See [3_6_Overloading_Fucntion_Names.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_6_Overloading_Fucntion_Names.cpp)
 
 In C++ you can have multiple functions with the same name, but the signature (data type) should be same all over the function.
+
+### 3.7 Overloading operators with function
+
+See [3_7_Oveloading_Operators.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_7_Oveloading_Operators.cpp)
+
+In C++ you can change the definition of the following 38 operators:
+
+|    |    |    |    |     |    |     |     |     |     |    |    |    |    |    |
+|----|----|----|----|-----|----|-----|-----|-----|-----|----|----|----|----|----|
+| +  | -  | *  | /  | %   | ^  | &   | |   | ~   | !   | =  | <  | >  | += | -= |
+| *= | /= | %= | ^= | &=  | |= | <<  | >>  | >>= | <<= | == | != | <= | >= | && |
+| || | ++ | -- | ,  | ->* | -> | ( ) | [ ] |     |     |    |    |    |    |    |
+
+That means an addition operator can be turned into multiplication operator.
