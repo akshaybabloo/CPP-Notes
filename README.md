@@ -657,63 +657,57 @@ See [3_7_Oveloading_Operators.cpp](https://github.com/akshaybabloo/CPP-Notes/tre
 
 In C++ you can change the definition of the following 38 operators:
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-yw4l{vertical-align:top}
-</style>
-<table class="tg">
+<table>
   <tr>
-    <td class="tg-yw4l">+</td>
-    <td class="tg-yw4l">-</td>
-    <td class="tg-yw4l">*</td>
-    <td class="tg-yw4l">/</td>
-    <td class="tg-yw4l">%</td>
-    <td class="tg-yw4l">^</td>
-    <td class="tg-yw4l">&amp;</td>
-    <td class="tg-yw4l">|</td>
-    <td class="tg-yw4l">~</td>
-    <td class="tg-yw4l">!</td>
-    <td class="tg-yw4l">=</td>
-    <td class="tg-yw4l">&lt;</td>
-    <td class="tg-yw4l">&gt;</td>
-    <td class="tg-yw4l">+=</td>
-    <td class="tg-yw4l">-=</td>
+    <td>+</td>
+    <td>-</td>
+    <td>*</td>
+    <td>/</td>
+    <td>%</td>
+    <td>^</td>
+    <td>&amp;</td>
+    <td>|</td>
+    <td>~</td>
+    <td>!</td>
+    <td>=</td>
+    <td>&lt;</td>
+    <td>&gt;</td>
+    <td>+=</td>
+    <td>-=</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">*=</td>
-    <td class="tg-yw4l">/=</td>
-    <td class="tg-yw4l">%=</td>
-    <td class="tg-yw4l">^=</td>
-    <td class="tg-yw4l">&amp;=</td>
-    <td class="tg-yw4l">|=</td>
-    <td class="tg-yw4l">&lt;&lt;</td>
-    <td class="tg-yw4l">&gt;&gt;</td>
-    <td class="tg-yw4l">&gt;&gt;=</td>
-    <td class="tg-yw4l">&lt;&lt;=</td>
-    <td class="tg-yw4l">==</td>
-    <td class="tg-yw4l">!=</td>
-    <td class="tg-yw4l">&lt;=</td>
-    <td class="tg-yw4l">&gt;=</td>
-    <td class="tg-yw4l">&amp;&amp;</td>
+    <td>*=</td>
+    <td>/=</td>
+    <td>%=</td>
+    <td>^=</td>
+    <td>&amp;=</td>
+    <td>|=</td>
+    <td>&lt;&lt;</td>
+    <td>&gt;&gt;</td>
+    <td>&gt;&gt;=</td>
+    <td>&lt;&lt;=</td>
+    <td>==</td>
+    <td>!=</td>
+    <td>&lt;=</td>
+    <td>&gt;=</td>
+    <td>&amp;&amp;</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">||</td>
-    <td class="tg-yw4l">++</td>
-    <td class="tg-yw4l">--</td>
-    <td class="tg-yw4l">,</td>
-    <td class="tg-yw4l">-&gt;*</td>
-    <td class="tg-yw4l">-&gt;</td>
-    <td class="tg-yw4l">( )</td>
-    <td class="tg-yw4l">[ ]</td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td>||</td>
+    <td>++</td>
+    <td>--</td>
+    <td>,</td>
+    <td>-&gt;*</td>
+    <td>-&gt;</td>
+    <td>( )</td>
+    <td>[ ]</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
 
