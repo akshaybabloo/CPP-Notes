@@ -27,6 +27,7 @@ C++ Notes
 	- [3.5 Function pointer](#35-function-pointer)
 	- [3.6 Overloading function names](#36-overloading-function-names)
 	- [3.7 Overloading operators with function](#37-overloading-operators-with-function)
+	- [3.8 Variable number of arguments](#38-variable-number-of-arguments)
 
 <!-- /TOC -->
 
@@ -712,3 +713,16 @@ In C++ you can change the definition of the following 38 operators:
 </table>
 
 That means an addition operator can be turned into multiplication operator.
+
+### 3.8 Variable number of arguments
+
+See [3_8_Variable_Arguments.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/3_Functions/3_8_Variable_Arguments.cpp)
+
+In C++ you can have multiple arguments given to a function, this can be achieved by adding `...` in the function arguments space.
+
+There are four macros that needs to be called when using a variable arguments:
+
+* *va_list*: `va_list fa` is used as a parameter.
+* *va_start*: `va_start(ap, parameter)` initialize a variable argument list.
+* *va_arg*: `va_arg(ap, type)` gets the next available argument of a data type.
+* *va_end*: `va_end(ap)` Ends using variable argument list
