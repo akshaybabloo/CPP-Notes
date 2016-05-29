@@ -28,6 +28,7 @@ C++ Notes
 	- [3.6 Overloading function names](#36-overloading-function-names)
 	- [3.7 Overloading operators with function](#37-overloading-operators-with-function)
 	- [3.8 Variable number of arguments](#38-variable-number-of-arguments)
+	- [3.9 Recursive function](#39-recursive-function)
 
 <!-- /TOC -->
 
@@ -726,3 +727,16 @@ There are four macros that needs to be called when using a variable arguments:
 * *va_start*: `va_start(ap, parameter)` initialize a variable argument list.
 * *va_arg*: `va_arg(ap, type)` gets the next available argument of a data type.
 * *va_end*: `va_end(ap)` Ends using variable argument list
+
+### 3.9 Recursive function
+
+In C++ you can call a function itself. For example:
+
+```cpp
+int main(int argc, char const *argv[]) {
+	main();
+	return 0;
+}
+```
+
+These types of functions are called recursive functions. These functions as an alternate to For loops.
