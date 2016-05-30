@@ -32,6 +32,7 @@ C++ Notes
 - [4 Preprocessors](#4-preprocessors)
 	- [4.1 Macro constants](#41-macro-constants)
 	- [4.2 Including a file](#42-including-a-file)
+	- [4.3 Conditions in preprocessor](#43-conditions-in-preprocessor)
 
 <!-- /TOC -->
 
@@ -787,3 +788,43 @@ When the above code is compiled the NUMBER is replaced by a literal value before
 See [4_2_Include_File](https://github.com/akshaybabloo/CPP-Notes/tree/master/4_Preprocessors/4_2_Include_File/)
 
 To include a file in a C++ file you would have to use `#include "file_name.h"`. This will place all the contents in the `cpp` before the code is sent to the compiler.
+
+### 4.3 Conditions in preprocessor
+
+See [4_3_Preprocessor_Conditions](https://github.com/akshaybabloo/CPP-Notes/tree/master/4_Preprocessors/4_3_Preprocessor_Conditions)
+
+Preprocessor consists of different types of conditional compilation
+
+<table>
+  <tr>
+    <td>#if</td>
+    <td>Opening `if` condition</td>
+  </tr>
+  <tr>
+    <td>#else</td>
+    <td>`else` condition</td>
+  </tr>
+  <tr>
+    <td>#elif</td>
+    <td>`else if` condition</td>
+  </tr>
+  <tr>
+    <td>#ifdef</td>
+    <td>`if defined` condition</td>
+  </tr>
+  <tr>
+    <td>#ifndef</td>
+    <td>`if not defined` condition</td>
+  </tr>
+  <tr>
+    <td>#endif</td>
+    <td>`end if` condition</td>
+  </tr>
+</table>
+
+Also, there are two alternatives for `#ifdef` and `#ifndef`, they are:
+
+```cpp
+#if defined(macro)
+#if !defined(macro)
+```
