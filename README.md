@@ -30,6 +30,7 @@ C++ Notes
 	- [3.8 Variable number of arguments](#38-variable-number-of-arguments)
 	- [3.9 Recursive function](#39-recursive-function)
 - [4 Preprocessors](#4-preprocessors)
+	- [4.1 Macro constants](#41-macro-constants)
 
 <!-- /TOC -->
 
@@ -762,3 +763,20 @@ void function_name();
 They are called as an "include guard" which checks for inclusion.
 
 Another type of preprocessor is used by using `#pragma` that are used (or targeted) for specific compilers and architectures.
+
+### 4.1 Macro constants
+
+See [4_1_Macro_Constants.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/4_Preprocessors/4_1_Macro_Constants.cpp)
+
+You can define a macro constant by using `#define macro`. For example:
+
+```cpp
+#define NUMBER 1
+
+int main(int argc, char const *argv[]) {
+	printf("%d\n", NUMBER);
+	return 0;
+}
+```
+
+When the above code is compiled the NUMBER is replaced by a literal value before the code reaches to the compiler. At this point you cannot get its address or use pointers.
