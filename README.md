@@ -29,6 +29,7 @@ C++ Notes
 	- [3.7 Overloading operators with function](#37-overloading-operators-with-function)
 	- [3.8 Variable number of arguments](#38-variable-number-of-arguments)
 	- [3.9 Recursive function](#39-recursive-function)
+- [4 Preprocessors](#4-preprocessors)
 
 <!-- /TOC -->
 
@@ -742,3 +743,22 @@ int main(int argc, char const *argv[]) {
 ```
 
 These types of functions are called recursive functions. These functions as an alternate to For loops.
+
+## 4 Preprocessors
+
+The preprocessors are used to process the code before sending it to the compiler. The most common way is the file inclusion using `#include <>`. You can also use macro preprocessors by using `#define NUMBER 1`, these acts like a string substitution.
+
+When you open a `.h` the contents of the file you often see looks something like this:
+
+```cpp
+#ifndef main_h
+#define main_h
+
+void function_name();
+
+#endif /* main_h */
+```
+
+They are called as an "include guard" which checks for inclusion.
+
+Another type of preprocessor is used by using `#pragma` that are used (or targeted) for specific compilers and architectures.
