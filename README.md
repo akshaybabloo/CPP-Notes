@@ -38,6 +38,7 @@ C++ Notes
 	- [4.6 Line continuation](#46-line-continuation)
 	- [4.6 Include guard](#46-include-guard)
 - [5 Classes and Objects in C++](#5-classes-and-objects-in-c)
+	- [5.1 Defining Classes and Objects](#51-defining-classes-and-objects)
 
 <!-- /TOC -->
 
@@ -888,7 +889,7 @@ C++ is a an Object Oriented Program, that's what makes it different from C progr
 
 ```cpp
 class name_t {
-int i; // Data members
+	int i; // Data members
 public: // Function members
 	name_t (arguments); // Constructor
 	~name_t (); // Destructor
@@ -903,3 +904,58 @@ Few points to remember:
 * Using classes you can allocate memory properly.
 
 More information can be found [here](http://www.cplusplus.com/doc/tutorial/classes/).
+
+### 5.1 Defining Classes and Objects
+
+There are different ways to define a class. For example
+
+See [5_1_1_Define_Classes.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/5_Classes_Objects/5_1_Define_Classes/5_1_1_Define_Classes.cpp)
+
+```cpp
+class name_t {
+	int i;
+public:
+	void some_name (arguments){ /* do something */};
+};
+
+int main(int argc, char const *argv[]) {
+	name_t obj1;
+	return 0;
+}
+```
+
+Another way is to use `private` keyword, you can then use this to define `private` variables and function after `public`. For example:
+
+```cpp
+class name_t {
+public:
+	void some_name (arguments){/* do something */};
+private:
+	int i;
+};
+
+int main(int argc, char const *argv[]) {
+	name_t obj1;
+	return 0;
+}
+```
+
+The public functions can be used outside, just declare it in the class file and define it outside the `class`. For example:
+
+See [5_1_2_Define_Classes.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/5_Classes_Objects/5_1_Define_Classes/5_1_2_Define_Classes.cpp)
+
+```cpp
+class name_t {
+public:
+	void some_name (arguments);
+private:
+	int i;
+};
+
+void name_t::some_name (arguments){/* do something */};
+
+int main(int argc, char const *argv[]) {
+	name_t obj1;
+	return 0;
+}
+```
