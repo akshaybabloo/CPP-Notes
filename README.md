@@ -40,6 +40,7 @@ C++ Notes
 - [5 Classes and Objects in C++](#5-classes-and-objects-in-c)
 	- [5.1 Defining Classes and Objects](#51-defining-classes-and-objects)
 	- [5.2 Data members](#52-data-members)
+	- [5.3 Function members](#53-function-members)
 
 <!-- /TOC -->
 
@@ -1008,3 +1009,9 @@ public:
 	/* data */
 };
 ```
+
+### 5.3 Function members
+
+See [5_3_Fucntion_Members.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/5_Classes_Objects/5_3_Fucntion_Members.cpp)
+
+You can define a same function with different signatures in C++.
