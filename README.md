@@ -39,6 +39,7 @@ C++ Notes
 	- [4.6 Include guard](#46-include-guard)
 - [5 Classes and Objects in C++](#5-classes-and-objects-in-c)
 	- [5.1 Defining Classes and Objects](#51-defining-classes-and-objects)
+	- [5.2 Data members](#52-data-members)
 
 <!-- /TOC -->
 
@@ -985,3 +986,25 @@ The code can be divided into 3 stages:
 		return 0;
 	}
 	```
+
+### 5.2 Data members
+
+See [5_2_Data_Members.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/5_Classes_Objects/5_2_Data_Members.cpp)
+
+In C and C++ we can find keyword called `struct`, when used in C++ it is an object. The different between a `struct` and `class` is that, `struct` by default has `public` data members, where as `class` has `private` data members, everything else is the same. For example:
+
+```cpp
+struct name_t {
+	/* data */
+};
+
+```
+
+is same as
+
+```cpp
+struct name_t {
+public:
+	/* data */
+};
+```
