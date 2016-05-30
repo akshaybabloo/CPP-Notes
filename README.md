@@ -31,6 +31,7 @@ C++ Notes
 	- [3.9 Recursive function](#39-recursive-function)
 - [4 Preprocessors](#4-preprocessors)
 	- [4.1 Macro constants](#41-macro-constants)
+	- [4.2 Including a file](#42-including-a-file)
 
 <!-- /TOC -->
 
@@ -780,3 +781,9 @@ int main(int argc, char const *argv[]) {
 ```
 
 When the above code is compiled the NUMBER is replaced by a literal value before the code reaches to the compiler. At this point you cannot get its address or use pointers.
+
+### 4.2 Including a file
+
+See [4_2_Include_File](https://github.com/akshaybabloo/CPP-Notes/tree/master/4_Preprocessors/4_2_Include_File/)
+
+To include a file in a C++ file you would have to use `#include "file_name.h"`. This will place all the contents in the `cpp` before the code is sent to the compiler.
