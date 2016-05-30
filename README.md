@@ -36,6 +36,7 @@ C++ Notes
 	- [4.4 Macro expansion](#44-macro-expansion)
 	- [4.5 Problems with Macro's](#45-problems-with-macros)
 	- [4.6 Line continuation](#46-line-continuation)
+	- [4.6 Include guard](#46-include-guard)
 
 <!-- /TOC -->
 
@@ -865,4 +866,17 @@ If you want to use complex macros you can use `line continuation` by add `\` at 
                 { \
                     printf("%d\n",i++); \
                 } while (i < 3);
+```
+
+### 4.6 Include guard
+
+See [4_6_Include_Guard](https://github.com/akshaybabloo/CPP-Notes/tree/master/4_Preprocessors/4_6_Include_Guard)
+
+There might be a situation where you might have to define a header file in another header file and when called in a C++ file you might include both header files. When you compile this you will have a `Build fail`, to over come this we have to include something called as `Include guard`. It looks something like this
+
+```cpp
+#ifndef _HEADERNAME_H
+#define _HEADERNAME_H
+...
+#endif
 ```
