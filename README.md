@@ -33,6 +33,7 @@ C++ Notes
 	- [4.1 Macro constants](#41-macro-constants)
 	- [4.2 Including a file](#42-including-a-file)
 	- [4.3 Conditions in preprocessor](#43-conditions-in-preprocessor)
+	- [4.4 Macro expansion](#44-macro-expansion)
 
 <!-- /TOC -->
 
@@ -827,4 +828,20 @@ Also, there are two alternatives for `#ifdef` and `#ifndef`, they are:
 ```cpp
 #if defined(macro)
 #if !defined(macro)
+```
+
+### 4.4 Macro expansion
+
+See [4_4_Macro_Expansion.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/4_Preprocessors/4_4_Macro_Expansion.cpp)
+
+
+Macro's can also take parameters and replace them when called. For example:
+
+```cpp
+#define ADD(a,b) (a+b)
+
+int main(int argc, char const *argv[]) {
+	printf("%d\n", ADD(10,20));
+	return 0;
+}
 ```
