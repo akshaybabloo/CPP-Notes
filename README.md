@@ -959,3 +959,29 @@ int main(int argc, char const *argv[]) {
 	return 0;
 }
 ```
+
+The code can be divided into 3 stages:
+
+* *Interface*: Usually kept in the header file.
+
+	```cpp
+	class name_t {
+	private:
+		/* data */
+	public:
+		void some_name (arguments);
+	};
+	```
+* *Implementation*: Usually kept in an implementation file
+
+	```cpp
+	void name_t::some_name (arguments){/* do something */};
+	```
+* *Usage*: Usually kept in `cpp` file
+
+	```cpp
+	int main(int argc, char const *argv[]) {
+		name_t obj1;
+		return 0;
+	}
+	```
