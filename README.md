@@ -510,7 +510,7 @@ See [3_2_1_Pass_by_Value.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/mas
 When you pass a value to a function, a copy of that value is stored in the argument.
 
 ```cpp
-void name(int c, int d) {
+void sum(int c, int d) {
     printf("%d\n", c + d);
 }
 
