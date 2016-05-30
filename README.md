@@ -35,6 +35,7 @@ C++ Notes
 	- [4.3 Conditions in preprocessor](#43-conditions-in-preprocessor)
 	- [4.4 Macro expansion](#44-macro-expansion)
 	- [4.5 Problems with Macro's](#45-problems-with-macros)
+	- [4.6 Line continuation](#46-line-continuation)
 
 <!-- /TOC -->
 
@@ -852,3 +853,16 @@ int main(int argc, char const *argv[]) {
 See [4_5_Macro_Problems.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/4_Preprocessors/4_5_Macro_Problems.cpp)
 
 You should always be careful when using parameterised macros. See [4_5_Macro_Problems.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/4_Preprocessors/4_5_Macro_Problems.cpp) for more details.
+
+### 4.6 Line continuation
+
+See [4_6_Line_Continuation.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/4_Preprocessors/4_6_Line_Continuation.cpp)
+
+If you want to use complex macros you can use `line continuation` by add `\` at the end of the each line. For example:
+
+```cpp
+#define LOOPER(i) do \
+                { \
+                    printf("%d\n",i++); \
+                } while (i < 3);
+```
