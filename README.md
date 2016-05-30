@@ -41,6 +41,7 @@ C++ Notes
 	- [5.1 Defining Classes and Objects](#51-defining-classes-and-objects)
 	- [5.2 Data members](#52-data-members)
 	- [5.3 Function members](#53-function-members)
+	- [5.4 Constructors and Destructors](#54-constructors-and-destructors)
 
 <!-- /TOC -->
 
@@ -1015,3 +1016,9 @@ public:
 See [5_3_Fucntion_Members.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/5_Classes_Objects/5_3_Fucntion_Members.cpp)
 
 You can define a same function with different signatures in C++.
+
+### 5.4 Constructors and Destructors
+
+See [5_4_Constructors_Dstructors.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/5_Classes_Objects/5_4_Constructors_Dstructors.cpp)
+
+A constructor can be used to send in arguments while initializing a class. Destructors are used to clear the memory after the program ends, in C++ destructor are always called at the end of the program by default.
