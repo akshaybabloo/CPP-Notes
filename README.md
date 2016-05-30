@@ -37,6 +37,7 @@ C++ Notes
 	- [4.5 Problems with Macro's](#45-problems-with-macros)
 	- [4.6 Line continuation](#46-line-continuation)
 	- [4.6 Include guard](#46-include-guard)
+- [5 Classes and Objects in C++](#5-classes-and-objects-in-c)
 
 <!-- /TOC -->
 
@@ -880,3 +881,25 @@ There might be a situation where you might have to define a header file in anoth
 ...
 #endif
 ```
+
+## 5 Classes and Objects in C++
+
+C++ is a an Object Oriented Program, that's what makes it different from C programming language. A class is define by using `class` keyword followed by class name. For example:
+
+```cpp
+class name_t {
+int i; // Data members
+public: // Function members
+	name_t (arguments); // Constructor
+	~name_t (); // Destructor
+
+};
+```
+
+Few points to remember:
+
+* A class can have multiple constructor and only one destructor.
+* A class when called and naming it is called an instance of that class. Example `name_t name;`, `name` is an instance of class `name_t`.
+* Using classes you can allocate memory properly.
+
+More information can be found [here](http://www.cplusplus.com/doc/tutorial/classes/).
