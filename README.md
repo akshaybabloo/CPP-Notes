@@ -1022,3 +1022,21 @@ You can define a same function with different signatures in C++.
 See [5_4_Constructors_Dstructors.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/5_Classes_Objects/5_4_Constructors_Dstructors.cpp)
 
 A constructor can be used to send in arguments while initializing a class. Destructors are used to clear the memory after the program ends, in C++ destructor are always called at the end of the program by default.
+
+### 5.5 Implicit and Explicit conversion
+
+See [5_5_Implicit_Explicit.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/5_Classes_Objects/5_5_Implicit_Explicit.cpp)
+
+By Default C++ does implicit conversion. To make an explicit conversion we need to use `explicit` keyword for a constructor.
+
+For example:
+
+```cpp
+class name_t {
+
+public:
+	explicit name_t (arguments);
+	virtual ~name_t ();
+
+};
+```
