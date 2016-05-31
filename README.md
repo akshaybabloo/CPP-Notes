@@ -1052,3 +1052,9 @@ namespace name {
 
 };
 ```
+
+### 5.7 Using `this`
+
+See [5_7_Using_this.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/5_Classes_Objects/5_7_Using_this.cpp)
+
+An object in C++ can access its own pointer, to do so, `this` keyword is used.
