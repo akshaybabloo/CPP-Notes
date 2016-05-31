@@ -42,6 +42,10 @@ C++ Notes
 	- [5.2 Data members](#52-data-members)
 	- [5.3 Function members](#53-function-members)
 	- [5.4 Constructors and Destructors](#54-constructors-and-destructors)
+	- [5.5 Implicit and Explicit conversion](#55-implicit-and-explicit-conversion)
+	- [5.6 Namespaces](#56-namespaces)
+	- [5.7 Using `this`](#57-using-this)
+	- [5.8 Operator overload: Member function](#58-operator-overload-member-function)
 
 <!-- /TOC -->
 
@@ -1062,3 +1066,9 @@ An object in C++ can access its own pointer, to do so, `this` keyword is used. Y
 ```cpp
 printf("%p\n", this);
 ```
+
+### 5.8 Operator overload: Member function
+
+See [5_8_Operator_Overload_Member_Function.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/5_Classes_Objects/5_8_Operator_Overload_Member_Function.cpp)
+
+Any function that belongs to a class is called a member function. Operator overload can be a part of member function.
