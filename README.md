@@ -47,6 +47,7 @@ C++ Notes
 	- [5.7 Using `this`](#57-using-this)
 	- [5.8 Operator overload: Member function](#58-operator-overload-member-function)
 	- [5.9 Operator overload: Non-member function](#59-operator-overload-non-member-function)
+	- [5.10 Conversion operator](#510-conversion-operator)
 
 <!-- /TOC -->
 
@@ -1079,3 +1080,9 @@ Any function that belongs to a class is called a member function. Operator overl
 See [5_9_Operator_Overload_Non_Member_Function.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/5_Classes_Objects/5_9_Operator_Overload_Non_Member_Function.cpp)
 
 Any function that does not belong to a class is called a  non-member function.
+
+### 5.10 Conversion operator
+
+See [5_10_Conversion_Operator.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/5_Classes_Objects/5_10_Conversion_Operator.cpp)
+
+You can use `+=` to concatenate a string with a rational number that belongs to a member function.
