@@ -1040,3 +1040,15 @@ public:
 
 };
 ```
+
+### 5.6 Namespaces
+
+See [5_6_Namespaces.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/5_Classes_Objects/5_6_Namespaces.cpp)
+
+Namespace in C++ acts like a scope to a group of classes, functions etc... A Namespace can be created by using `namespace` keyword. For example:
+
+```cpp
+namespace name {
+
+};
+```
