@@ -48,6 +48,7 @@ C++ Notes
 	- [5.8 Operator overload: Member function](#58-operator-overload-member-function)
 	- [5.9 Operator overload: Non-member function](#59-operator-overload-non-member-function)
 	- [5.10 Conversion operator](#510-conversion-operator)
+	- [5.11 Using new and delete](#511-using-new-and-delete)
 
 <!-- /TOC -->
 
@@ -1086,3 +1087,26 @@ Any function that does not belong to a class is called a  non-member function.
 See [5_10_Conversion_Operator.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/5_Classes_Objects/5_10_Conversion_Operator.cpp)
 
 You can use `+=` to concatenate a string with a rational number that belongs to a member function.
+
+### 5.11 Using new and delete
+
+See [5_11_New_and_Delete.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/5_Classes_Objects/5_11_New_and_Delete.cpp)
+
+C++ allows you to allocate and delete memory for different data types using two keywords, `new` - To allocate memory and `delete` - To deallocate memory. For example:
+
+```cpp
+class name_t {
+private:
+	/* data */
+public:
+	name_t (arguments);
+	virtual ~name_t ();
+
+};
+
+int main(int argc, char const *argv[]) {
+	name_t *a = new name_t(); // to allocate memory
+	delete a; // to deallocate memory
+	return 0;
+}
+```
