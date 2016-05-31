@@ -1057,4 +1057,8 @@ namespace name {
 
 See [5_7_Using_this.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/5_Classes_Objects/5_7_Using_this.cpp)
 
-An object in C++ can access its own pointer, to do so, `this` keyword is used.
+An object in C++ can access its own pointer, to do so, `this` keyword is used. You can print out the address of a pointer by using
+
+```cpp
+printf("%p\n", this);
+```
