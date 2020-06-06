@@ -1,56 +1,53 @@
-# CPP-Notes
+# C++ Notes
 C++ Notes
 
 **Table of Contents**
 
-<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
 - [1 Requirements](#1-requirements)
-	- [1.1 Mac](#11-mac)
-	- [1.2 Windows](#12-windows)
+  - [1.1 Mac](#11-mac)
+  - [1.2 Windows](#12-windows)
+  - [CMake](#cmake)
 - [2 Basics](#2-basics)
-	- [2.1 Identifiers](#21-identifiers)
-	- [2.2 Defining Variables](#22-defining-variables)
-	- [2.3 Pointer and Reference](#23-pointer-and-reference)
-	- [2.4 Arrays and Strings](#24-arrays-and-strings)
-	- [2.5 Conditions](#25-conditions)
-	- [2.6 Switch Case](#26-switch-case)
-	- [2.7 While Loop](#27-while-loop)
-	- [2.8 For Loop](#28-for-loop)
-	- [2.9 Range base `For` loop](#29-range-base-for-loop)
-	- [2.10 Using stdout](#210-using-stdout)
+  - [2.1 Identifiers](#21-identifiers)
+  - [2.2 Defining Variables](#22-defining-variables)
+  - [2.3 Pointer and Reference](#23-pointer-and-reference)
+  - [2.4 Arrays and Strings](#24-arrays-and-strings)
+  - [2.5 Conditions](#25-conditions)
+  - [2.6 Switch Case](#26-switch-case)
+  - [2.7 While Loop](#27-while-loop)
+  - [2.8 For Loop](#28-for-loop)
+  - [2.9 Range base `For` loop](#29-range-base-for-loop)
+  - [2.10 Using stdout](#210-using-stdout)
 - [3 Functions](#3-functions)
-	- [3.1 Defining a function](#31-defining-a-function)
-	- [3.2 Passing values to a function](#32-passing-values-to-a-function)
-	- [3.3 Automatic variables vs. Static variables](#33-automatic-variables-vs-static-variables)
-	- [3.4 Return a function call](#34-return-a-function-call)
-	- [3.5 Function pointer](#35-function-pointer)
-	- [3.6 Overloading function names](#36-overloading-function-names)
-	- [3.7 Overloading operators with function](#37-overloading-operators-with-function)
-	- [3.8 Variable number of arguments](#38-variable-number-of-arguments)
-	- [3.9 Recursive function](#39-recursive-function)
+  - [3.1 Defining a function](#31-defining-a-function)
+  - [3.2 Passing values to a function](#32-passing-values-to-a-function)
+  - [3.3 Automatic variables vs. Static variables](#33-automatic-variables-vs-static-variables)
+  - [3.4 Return a function call](#34-return-a-function-call)
+  - [3.5 Function pointer](#35-function-pointer)
+  - [3.6 Overloading function names](#36-overloading-function-names)
+  - [3.7 Overloading operators with function](#37-overloading-operators-with-function)
+  - [3.8 Variable number of arguments](#38-variable-number-of-arguments)
+  - [3.9 Recursive function](#39-recursive-function)
 - [4 Preprocessors](#4-preprocessors)
-	- [4.1 Macro constants](#41-macro-constants)
-	- [4.2 Including a file](#42-including-a-file)
-	- [4.3 Conditions in preprocessor](#43-conditions-in-preprocessor)
-	- [4.4 Macro expansion](#44-macro-expansion)
-	- [4.5 Problems with Macro's](#45-problems-with-macros)
-	- [4.6 Line continuation](#46-line-continuation)
-	- [4.6 Include guard](#46-include-guard)
+  - [4.1 Macro constants](#41-macro-constants)
+  - [4.2 Including a file](#42-including-a-file)
+  - [4.3 Conditions in preprocessor](#43-conditions-in-preprocessor)
+  - [4.4 Macro expansion](#44-macro-expansion)
+  - [4.5 Problems with Macro's](#45-problems-with-macros)
+  - [4.6 Line continuation](#46-line-continuation)
+  - [4.6 Include guard](#46-include-guard)
 - [5 Classes and Objects in C++](#5-classes-and-objects-in-c)
-	- [5.1 Defining Classes and Objects](#51-defining-classes-and-objects)
-	- [5.2 Data members](#52-data-members)
-	- [5.3 Function members](#53-function-members)
-	- [5.4 Constructors and Destructors](#54-constructors-and-destructors)
-	- [5.5 Implicit and Explicit conversion](#55-implicit-and-explicit-conversion)
-	- [5.6 Namespaces](#56-namespaces)
-	- [5.7 Using `this`](#57-using-this)
-	- [5.8 Operator overload: Member function](#58-operator-overload-member-function)
-	- [5.9 Operator overload: Non-member function](#59-operator-overload-non-member-function)
-	- [5.10 Conversion operator](#510-conversion-operator)
-	- [5.11 Using new and delete](#511-using-new-and-delete)
-
-<!-- /TOC -->
+  - [5.1 Defining Classes and Objects](#51-defining-classes-and-objects)
+  - [5.2 Data members](#52-data-members)
+  - [5.3 Function members](#53-function-members)
+  - [5.4 Constructors and Destructors](#54-constructors-and-destructors)
+  - [5.5 Implicit and Explicit conversion](#55-implicit-and-explicit-conversion)
+  - [5.6 Namespaces](#56-namespaces)
+  - [5.7 Using `this`](#57-using-this)
+  - [5.8 Operator overload: Member function](#58-operator-overload-member-function)
+  - [5.9 Operator overload: Non-member function](#59-operator-overload-non-member-function)
+  - [5.10 Conversion operator](#510-conversion-operator)
+  - [5.11 Using new and delete](#511-using-new-and-delete)
 
 ## 1 Requirements
 
@@ -58,7 +55,7 @@ This tutorial is based on C++11. Make sure you are using the latest IDE's - XCod
 
 IDE's that I think are good:
 
-1. [Visual Studio 2015 Community](https://www.visualstudio.com/) - Windows
+1. [Visual Studio 2019 Community](https://www.visualstudio.com/) - Cross-platform
 2. [XCode](https://developer.apple.com/xcode/) - Mac
 3. [CLion](https://www.jetbrains.com/clion) - Cross-platform
 4. [NetBeans](https://netbeans.org/downloads/index.html) - Cross-platform
@@ -118,6 +115,10 @@ IDE's that I think are good:
 
 1. Open your command prompt, by doing <kbd>WINDOWS</kbd> + <kbd>R</kbd> and type in `cmd`.
 2. To execute the built `test.cpp`, You would have to go to the project folder `CPP > Build > CPP.exe`. Drag and drop `CPP.exe` on the command prompt the press `Enter`, this will output `hello`.
+
+### CMake
+
+CMake is a build system for C++. See their website - [CMake](https://cmake.org) - for more information.
 
 ## 2 Basics
 
