@@ -48,6 +48,9 @@ C++ Notes
   - [5.9 Operator overload: Non-member function](#59-operator-overload-non-member-function)
   - [5.10 Conversion operator](#510-conversion-operator)
   - [5.11 Using new and delete](#511-using-new-and-delete)
+- [5.6 File IO](#56-file-io)
+  - [5.6.1 Reading Files](#561-reading-files)
+  - [5.6.2 Writing File](#562-writing-file)
 
 ## 1 Requirements
 
@@ -1111,3 +1114,19 @@ int main(int argc, char const *argv[]) {
 	return 0;
 }
 ```
+
+## 5.6 File IO
+
+In this section we will look at how to read and write files using `fstream`.;
+
+### 5.6.1 Reading Files
+
+[6_1_Reading_File.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/6_File_IO/6_1_Reading_File.cpp)
+
+Reading a file in C++ can be done using `ifstream`, this data type has many functions associated to it but we want `open`, `good` and `close`. `open` opens a file from the memory, `good` checks if the state of stream is good or not and `close` closes the file after reading from it.
+
+### 5.6.2 Writing File
+
+[6_2_Writing_File.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/6_File_IO/6_2_Writing_File.cpp)
+
+Writing file can be done using `ofstring`, like `ifstring`, this data type provides the same functions - `open` and `close`. If a file already exists with that name, its over written, this can be changed using `ios::app` option that appends any string given to it.
