@@ -57,3 +57,10 @@ CPP-Notes/CPP-Notes/*
 CPP-Notes/CPP-Notes/main.cpp
 
 .idea/
+/main.cpp
+/main.h
+/CMakeLists.txt
+
+cmake-build-debug/
+
+*.txt
