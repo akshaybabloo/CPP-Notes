@@ -51,6 +51,8 @@ C++ Notes
 - [5.6 File IO](#56-file-io)
   - [5.6.1 Reading Files](#561-reading-files)
   - [5.6.2 Writing File](#562-writing-file)
+- [6. Data Structures](#6-data-structures)
+  - [6.1 Structs](#61-structs)
 
 ## 1 Requirements
 
@@ -1130,3 +1132,27 @@ Reading a file in C++ can be done using `ifstream`, this data type has many func
 [6_2_Writing_File.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/6_File_IO/6_2_Writing_File.cpp)
 
 Writing file can be done using `ofstring`, like `ifstring`, this data type provides the same functions - `open` and `close`. If a file already exists with that name, its over written, this can be changed using `ios::app` option that appends any string given to it.
+
+
+## 6. Data Structures
+
+_A data structure is a group of data elements grouped together under one name._ A structure can have multiple data types grouped together to form a way of representation.
+
+### 6.1 Structs
+
+[7_1_Structs.cpp](https://github.com/akshaybabloo/CPP-Notes/tree/master/7_Data_Structures/7_1_Structs.cpp)
+
+It has a group of data types that can be called by name. It can be represented as:
+
+```cpp
+struct STRUCT_NAME {
+    DATA_TYPE NAME;
+};
+```
+
+You can access them as:
+
+```cpp
+STRUCT_NAME some_name;
+some_name.NAME
+```
